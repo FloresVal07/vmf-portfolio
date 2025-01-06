@@ -7,20 +7,31 @@ function NavBar() {
       e.preventDefault(); // Prevent page reload for internal links
       navigate(path);     // Navigate using React Router
     };
-  
+    
     return (
       <nav className="navbar">
         <div className="navbar-title">
           <h1 className="navbar-acronym">VMF</h1>
-          <h1 className="navbar-titlename-firstHalf">Valentin Mateo Flores</h1>
+          <h1 className="navbar-titlename-firstHalf">Valentin</h1>
+          <h1 className="navbar-titlename-secondHalf">M Flores</h1>
         </div>
-        <div className="navbar-options">
-          <a href="/" onClick={(e) => handleAnchorClick(e, "/")}>Home</a>
-          <a href="/about" onClick={(e) => handleAnchorClick(e, "/about")}>About</a>
-          <a href="/projects" onClick={(e) => handleAnchorClick(e, "/projects")}>Projects</a>
-          <a href="https://github.com/FloresVal07" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="/contact" onClick={(e) => handleAnchorClick(e, "/contact")}>Contact</a>
-        </div>
+        <input type="checkbox" id="navbar-toggle" class="navbar-checkbox" />
+        <label for="navbar-toggle" class="navbar-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="navbar-options">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li>
+            <a href="https://github.com/FloresVal07" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
       </nav>
     );
 }

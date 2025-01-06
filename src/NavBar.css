@@ -1,51 +1,116 @@
 /**
     THIS IS THE ENTIRE HEADER(NAVBAR)
 **/
-.navbar{
+.navbar {
     all: unset;
     display: flex;
     background-color: #FFE96C;
-    width: calc(100%-8px);
+    width: calc(100% - 8px); /* Fixed typo in calc */
     height: 60px;
     border: 4px solid #59472B;
     align-items: last baseline;
     justify-content: space-between;
+    position: relative;
 }
 
 /**
     THESE EDIT THE NAME AND ACRONYMS
 **/
-.navbar-title{
+.navbar-title {
     all: unset;
-    align-items: last baseline;
     display: flex;
-    background-color:aqua;
+    align-items: last baseline;
+    background-color: #FFE96C;
+    margin-left: 70px;
 }
-.navbar-acronym{
+.navbar-acronym {
     font-weight: bold;
     color: #59472B;
     font-size: 36px;
     letter-spacing: 5%;
+    margin-right: 30px;
 }
-.navbar-titlename{
+.navbar-titlename-firstHalf {
     font-weight: bold;
+    margin-right: 10px;
     color: #59472B;
 }
+
+.navbar-titlename-secondHalf {
+    font-weight: lighter;
+    color: #59472B;
+}
+
 /**
     THESE EDIT THE CLICKABLE NAVBAR OPTIONS
 **/
-.navbar-options{
-    background-color: pink;
+.navbar-options {
+    background-color: #FFE96C;
     padding-left: 20px;
+    display: flex;
+    gap: 20px;
 }
-.navbar-options a{
+
+/* Hamburger menu styles for small screens */
+.navbar-checkbox {
+    display: none; /* Hidden checkbox to toggle menu */
+}
+
+.navbar-toggle-label {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    width: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.navbar-toggle-label span {
+    display: block;
+    height: 3px;
+    background-color: #59472B;
+    border-radius: 2px;
+}
+
+/* Hide navbar options by default for small screens */
+@media (max-width: 767px) {
+    .navbar-options {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: pink;
+        border: 4px solid #59472B;
+        width: calc(100% - 8px);
+        padding: 10px;
+    }
+
+    .navbar-checkbox:checked ~ .navbar-options {
+        display: flex; /* Show menu when checkbox is checked */
+    }
+
+    .navbar-toggle-label {
+        display: flex; /* Show hamburger icon */
+    }
+}
+
+/**EDITS EACH INDIVIDUAL OPTION*/
+.navbar-options li{
+    all: unset;
+}
+.navbar-options a {
     all: unset;
     font-weight: bold;
     margin-right: 20px;
     color: #59472B;
 }
 
-.navbar-options a:hover{
+.navbar-options a:hover {
     cursor: pointer;
     opacity: 40%;
 }
