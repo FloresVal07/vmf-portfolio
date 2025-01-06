@@ -1,0 +1,22 @@
+#home{
+    display: flex;
+    padding:50px 0px 50px 0px;
+}
+.overview{
+    text-align: center;
+    background-color: rgb(255, 197, 255);
+}
+.overview-title{
+    color: #59472B;
+}
+.overview-text{
+    text-align: left;
+    color: #8C5A11;
+    font-weight: bold;
+    width: 300px;
+    font-size: 18px;
+}
+
+.top-right{
+    background-color: white;
+}
