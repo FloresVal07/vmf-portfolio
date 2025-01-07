@@ -15,18 +15,28 @@
     width: 300px;
     font-size: 18px;
 }
+.overview-image{
+    border-radius: 5px;
+    width: 100%;
+    border: 4px solid #59472B;
+}
 
-@media (min-width: 767px) {
+@media (min-width: 480px) {
     #home{
         display: flex;
     }
     .overview{
         width: calc(50%);
+        padding-left: 20px;
+        padding-right: 20px;
         align-content: center;
     }
     .overview-text{
         width: auto;
-        text-align: center;
+    }
+    .overview-image{
+        width: 350px;
+        height: 210px;
     }
 }
 

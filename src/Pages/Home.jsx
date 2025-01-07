@@ -1,5 +1,5 @@
 import "./Home.css";
-
+import selfie from "../assets/selfie.jpg";
 function Home(){
     return(
         <div className="content" id="home">
@@ -16,9 +16,7 @@ function Home(){
                 <br/>
                 <hr className="overview-line"/>
             </div>
-            <div className="overview-image">
-                <h1>Home</h1>
-            </div>
+            <img src={selfie} className="overview-image" alt="selfie image of Valentin"/>
         </div>
     );
 }
