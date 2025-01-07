@@ -18,6 +18,12 @@
     font-size: 18px;
 }
 
+@media (min-width: 767px) {
+    .overview-text{
+        width: 400px;
+    }
+}
+
 .top-right{
     background-color: white;
 }
