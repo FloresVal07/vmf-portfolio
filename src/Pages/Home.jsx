@@ -15,8 +15,11 @@ function Home(){
                       achievements and interests along the way.</p>
                 <br/>
                 <hr className="overview-line"/>
+                <br/>
             </div>
-            <img src={selfie} className="overview-image" alt="selfie image of Valentin"/>
+            <div className="overview-image-holder">
+                <img src={selfie} className="overview-image" alt="selfie image of Valentin"/>
+            </div>
         </div>
     );
 }
