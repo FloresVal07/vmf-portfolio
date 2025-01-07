@@ -1,6 +1,4 @@
 #home{
-    display: flex;
-    justify-content: center;
     padding:40px 0px 40px 0px;
 }
 .overview{
@@ -19,8 +17,16 @@
 }
 
 @media (min-width: 767px) {
+    #home{
+        display: flex;
+    }
+    .overview{
+        width: calc(50%);
+        align-content: center;
+    }
     .overview-text{
-        width: 400px;
+        width: auto;
+        text-align: center;
     }
 }
 
