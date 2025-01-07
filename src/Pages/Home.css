@@ -1,6 +1,7 @@
 #home{
     display: flex;
-    padding:50px 0px 50px 0px;
+    justify-content: center;
+    padding:40px 0px 40px 0px;
 }
 .overview{
     text-align: center;
