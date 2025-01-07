@@ -6,6 +6,7 @@
     padding: 0px 30px 0px 30px;
     background-color: #FFE96C;
 }
+
 .overview-title{
     color: #59472B;
 }
@@ -16,6 +17,11 @@
     width: 300px;
     font-size: 18px;
 }
+
+.overview-line{
+    color: #59472B;
+}
+
 .overview-image-holder{
     display: flex;
     justify-content: center;
