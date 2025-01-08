@@ -1,0 +1,32 @@
+.image-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE96C;
+}
+
+.car {
+    width: 200px;
+    height: auto;
+    border: 4px solid #59472B;
+    border-radius: 5px;
+}
+
+#car-middle{
+    width: 250px;
+}
+
+.car-button{
+    height: 48px;
+    width: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.car:hover{
+    opacity: 60%;
+    cursor: pointer;
+}
+.car-button:hover{
+    opacity: 60%;
+    cursor: pointer;
+}

@@ -1,5 +1,7 @@
 import "./Home.css";
 import selfie from "../assets/selfie.jpg";
+import Carousel from "./Carousel.jsx";
+
 function Home(){
     return(
         <div className="content" id="home">
@@ -20,7 +22,9 @@ function Home(){
             <div className="overview-image-holder">
                 <img src={selfie} className="overview-image" alt="selfie image of Valentin"/>
             </div>
+            <Carousel/>
         </div>
+        
     );
 }
 
