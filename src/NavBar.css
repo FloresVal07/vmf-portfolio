@@ -76,7 +76,7 @@
 }
 
 /* Hide navbar options by default for small screens */
-@media (max-width: 767px) {
+@media (max-width: 860px) {
     .navbar-options {
         display: none;
         flex-direction: column;

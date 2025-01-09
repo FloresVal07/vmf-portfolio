@@ -24,6 +24,7 @@ function Carousel() {
     <div className="image-holder">
       <img
         className="car"
+        id="car-left"
         src={cars[(carsPos - 1 + cars.length) % cars.length]}
         alt="Previous car"
         onClick={handleLeftClick}
@@ -56,6 +57,7 @@ function Carousel() {
 
       <img
         className="car"
+        id="car-right"
         src={cars[(carsPos + 1) % cars.length]}
         alt="Next car"
         onClick={handleRightClick}
