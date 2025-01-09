@@ -1,15 +1,17 @@
 import "./Carousel.css";
-import car1 from "../assets/carouselImages/carousel1.jpg";
-import car2 from "../assets/carouselImages/carousel2.jpg";
-import car3 from "../assets/carouselImages/carousel3.jpg";
-import car4 from "../assets/carouselImages/carousel4.jpg";
-import car5 from "../assets/carouselImages/carousel5.jpg";
+import car1 from "../assets/carouselImages/gwentImage.png";
+import car2 from "../assets/carouselImages/contact.png";
+import car3 from "../assets/carouselImages/hob1234.jpg";
+import car4 from "../assets/carouselImages/manlookingintosky.jpg";
+import car5 from "../assets/carouselImages/mesa.jpg";
+import car6 from "../assets/carouselImages/shinyHuntingImage.png";
+import car7 from "../assets/carouselImages/soccer.png";
 import rightArrow from "../assets/rightArrow.svg";
 import leftArrow from "../assets/leftArrow.svg";
 import { useState } from "react";
 
 function Carousel() {
-  const cars = [car1, car2, car3, car4, car5];
+  const cars = [car1, car2, car3, car4, car5, car6, car7];
   const [carsPos, setCarsPos] = useState(0);
 
   const handleLeftClick = () => {
