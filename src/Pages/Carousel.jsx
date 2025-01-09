@@ -9,10 +9,20 @@ import car7 from "../assets/carouselImages/soccer.png";
 import rightArrow from "../assets/rightArrow.svg";
 import leftArrow from "../assets/leftArrow.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Carousel() {
-  const cars = [car1, car2, car3, car4, car5, car6, car7];
+  const cars = [
+    { src: car1, link: "/" }, // Home
+    { src: car2, link: "/about" }, // About
+    { src: car3, link: "/contact" }, // Contact
+    { src: car4, link: "/projects" }, // Projects
+    { src: car5, link: "/" }, // Home
+    { src: car6, link: "/about" }, // About
+    { src: car7, link: "/projects" }, // Projects
+  ];
   const [carsPos, setCarsPos] = useState(0);
+  const navigate = useNavigate();
 
   const handleLeftClick = () => {
     setCarsPos((prevPos) => (prevPos - 1 + cars.length) % cars.length);
@@ -22,12 +32,16 @@ function Carousel() {
     setCarsPos((prevPos) => (prevPos + 1) % cars.length);
   };
 
+  const handleImageClick = () => {
+    navigate(cars[carsPos].link); // Navigate to the associated page
+  };
+
   return (
     <div className="image-holder">
       <img
         className="car"
         id="car-left"
-        src={cars[(carsPos - 1 + cars.length) % cars.length]}
+        src={cars[(carsPos - 1 + cars.length) % cars.length].src}
         alt="Previous car"
         onClick={handleLeftClick}
         style={{ zIndex: 0 }}
@@ -44,7 +58,8 @@ function Carousel() {
       <img
         className="car"
         id="car-middle"
-        src={cars[carsPos]}
+        src={cars[carsPos].src}
+        onClick={handleImageClick}
         alt="Current car"
         style={{ zIndex: 1 }}
       />
@@ -60,7 +75,7 @@ function Carousel() {
       <img
         className="car"
         id="car-right"
-        src={cars[(carsPos + 1) % cars.length]}
+        src={cars[(carsPos + 1) % cars.length].src}
         alt="Next car"
         onClick={handleRightClick}
         style={{ zIndex: 0 }}
