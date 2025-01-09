@@ -6,6 +6,8 @@
 
 .topHalf{
     display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
 }
 
 .overview{
@@ -45,6 +47,9 @@
 @media (min-width: 520px) {
     #home{
         display: flex;
+    }
+    .topHalf{
+        flex-direction: row;
     }
     .overview{
         max-width: 50%;
