@@ -13,7 +13,12 @@ function About(){
                 <Column title="Values/Goals" body={body} id="middle-column" alt="Values" src={ManLooking}/>
                 <Column title="Hobbies" body={body} id="right-column" alt="Hobbies" src={Hobbies}/>
             </div>
-            <h1>Words</h1>
+            <div className="bottom">
+                <h1>HECK</h1>
+                <h1>HECK</h1>
+                <h1>HECK</h1>
+                <h1>HECK</h1>
+            </div>
         </div>
     );
 }

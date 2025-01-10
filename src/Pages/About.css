@@ -6,6 +6,11 @@
     display: flex;
     flex-direction: column;
 }
+.bottom{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
 
 @media (min-width: 630px) {
     .top{
