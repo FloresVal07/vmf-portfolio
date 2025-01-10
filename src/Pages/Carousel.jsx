@@ -13,13 +13,13 @@ import { useNavigate } from "react-router-dom";
 
 function Carousel() {
   const cars = [
-    { src: car1, link: "/" }, // Home
-    { src: car2, link: "/about" }, // About
-    { src: car3, link: "/contact" }, // Contact
-    { src: car4, link: "/projects" }, // Projects
-    { src: car5, link: "/" }, // Home
-    { src: car6, link: "/about" }, // About
-    { src: car7, link: "/projects" }, // Projects
+    { src: car1, link: "/projects" }, 
+    { src: car2, link: "/contact" }, 
+    { src: car3, link: "/about" }, 
+    { src: car4, link: "/about" }, 
+    { src: car5, link: "/about" }, 
+    { src: car6, link: "/projects" }, 
+    { src: car7, link: "/about" }, 
   ];
   const [carsPos, setCarsPos] = useState(0);
   const navigate = useNavigate();
@@ -58,7 +58,7 @@ function Carousel() {
       <img
         className="car"
         id="car-middle"
-        src={cars[carsPos].src}
+        src={cars[carsPos].src} //uses this equation to easily handle negatives and out of bound positives
         onClick={handleImageClick}
         alt="Current car"
         style={{ zIndex: 1 }}

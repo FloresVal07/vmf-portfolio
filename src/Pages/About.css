@@ -1,0 +1,24 @@
+#about{
+    height: 300px;
+    display: flex;
+}
+.top-column{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    width: calc(33.3333%);
+    border-right: 2px solid #59472B;
+    border-left: 2px solid #59472B;
+    border-bottom: 2px solid #59472B;
+}
+#left-column{
+    border-left: none;
+}
+#right-column{
+    border-right: none;
+}
+.column-title{
+    color: #59472B;
+    margin-top: 10px;
+    font-size: 26px;
+}
