@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timeline{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFE96C;
+}
+
+.timeline div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+
+.timeline-header{
+  background-color: #FFF1A0;
+  overflow: hidden;
+  /*This fixes the height width ratio problem for ALL rectangles. Don't know why just use it*/
+  aspect-ratio: 1/1;
+  width: 300px;
+  min-width: 200px;
+  min-height: 200px;
+
+}
+.timeline-header-text{
+  font-size: 46px;
+  text-align: center;
+  color: #59472B;
+}
+
+.timeline-body{
+  gap: 10px;
+  background-color: #FFE96C;
+  text-align: left;
+  aspect-ratio: 1/2;
+  min-width: 200px;
+  min-height: 200px;
+  width: 300px;
+}
+
+.timeline-body-text{
+  color: #8C5A11;
+  font-size: 16px;
+}
+
+.timeline-selection{
+  background-color: #FFE96C;
+  aspect-ratio: 1/1;
+  min-width: 200px;
+  min-height: 200px;
+  width: 300px;
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+
+.timeline-selection-line{
+  background-color: #3A2E1C;
+  position: absolute;
+  height: 300px;
+  width: 2px;
+}
+
+.timeline-selection-optionbox{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+
+
+@media(min-width: 820px){
+  .timeline{
+    flex-direction: row;
+    align-items:unset;
+    padding: 10px;
+  }
+  
+  .timeline-header{
+    width: 25vw;
+    height: 25vw;
+  }
+  .timeline-body{
+    min-width: 350px;
+    width: 50vw;
+    height: 25vw;
+  }
+  .timeline-selection{
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .timeline-selection-line{
+    height: 25vw;
+  }
+
+}
+
+.radiobutton {
+  appearance: none;
+  -webkit-appearance: none; 
+  flex-shrink: 0; 
+  width: 17px;
+  height: 17px;
+  border: 4px solid #3A2E1C; 
+  border-radius: 50%; 
+  background-color: #3A2E1C; 
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.radiobutton:checked {
+  background-color: #8C5A11; 
+  border-color: #8C5A11;
+}
+
+.radiobutton:hover{
+  border-color: #6E604C;
+}
+
+.timeline-selection-option{
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  margin-left: 45.5%;
+  color: #8C5A11;
+}
+
+.timeline-selection-option-text{
+  white-space: nowrap;     /* Prevent text from wrapping */
+  overflow: hidden;        /* Hide the overflowed text */
+  text-overflow: ellipsis;
+}

@@ -9,7 +9,7 @@
 .bottom{
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    padding: 10px;
 }
 
 @media (min-width: 630px) {
