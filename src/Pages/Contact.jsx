@@ -7,13 +7,27 @@ function Contact(){
             <div className="content-box-container">
                 <div className="content-box-holder">
                     <div className="content-box-row">
-                    
+                        <div className="content-box" id="hidden-box"></div>
+                        <div className="content-box">
+        
+                        </div>
+                        <div className="content-box" id="hidden-box"></div>
                     </div>
                     <div className="content-box-row">
-                        
+                        <div className="content-box">
+
+                        </div>
+                        <div className="content-box" id="hidden-box"></div>
+                        <div className="content-box">
+
+                        </div>
                     </div>
                     <div className="content-box-row">
-                        
+                        <div className="content-box" id="hidden-box"></div>
+                        <div className="content-box">
+        
+                        </div>
+                        <div className="content-box" id="hidden-box"></div>
                     </div>
                 </div>
             </div>
