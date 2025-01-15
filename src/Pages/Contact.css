@@ -14,8 +14,8 @@
     align-items: center;
     background-color: #FFF098;
     border-radius: 25px;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 350px;
+    min-height: 350px;
     width: 40vw;
     height: 40vw;
     
@@ -46,5 +46,5 @@
     height: 100%;
     width: 30%;
     border-radius: 25px;
-    background-color: #FFED87;
+    background-color: #FFE96C;
 }
