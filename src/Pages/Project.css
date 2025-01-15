@@ -1,0 +1,37 @@
+.project-listitem-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-listitem-image{
+    width: 20vw;
+    height: 20vw;
+    min-height: 150px;
+    min-width: 150px;
+}
+
+.project-listitem-text-container{
+    background-color: #FFE96C;
+    border-left: 4px solid #59472B;
+    overflow-y: auto;
+    min-height: 150px;
+    max-height: 20vw;
+    width: 80vw;
+    padding: 10px;
+}
+
+.project-listitem-text{
+    font-weight: bold;
+    color: #8C5A11;
+    font-size: 14px;
+}
+
+@media(min-width: 750px){
+    .project-listitem-text{
+        font-size: 17px;
+    }
+    .project-listitem-text-container{
+        min-height: 20vw;
+    }
+}
