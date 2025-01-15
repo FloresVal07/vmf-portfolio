@@ -1,14 +1,43 @@
 import rightArr from "../assets/projectImages/shinyHunter.png";
+
 import "./Project.css";
+
 function Projects(){
+
+    const options = [
+        { src: rightArr, 
+        alt:"Image of the relay system of my shiny hunter", 
+        value: "Shiny Hunter", 
+        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn "
+        }, 
+        { src: rightArr, 
+        alt:"Image of the relay system of my shiny hunter", 
+        value: "Shiny Hunter", 
+        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn "
+        },
+        { src: rightArr, 
+        alt:"Image of the relay system of my shiny hunter", 
+        value: "Shiny Hunter", 
+        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn "
+        },
+        { src: rightArr, 
+        alt:"Image of the relay system of my shiny hunter", 
+        value: "Shiny Hunter", 
+        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn "
+        }
+    ];
+
     return(
         <div className="content">
-            <div className="project-listitem-container">
-                <img src={rightArr} className="project-listitem-image" alt="image of my shiny hunter's relay boards"></img>
-                <div className="project-listitem-text-container">
-                    <h1 className="project-listitem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
-                    <h1 className="project-listitem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
-                </div>
+            <div className="project-listitems">
+                {options.map((option) => (
+                    <div key={option.value} className="project-listitem-container">
+                        <img src={option.src} className="project-listitem-image" alt={option.alt}/>
+                        <div className="project-listitem-text-container">
+                            <h1 className="project-listitem-text">{option.text1}</h1>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );
