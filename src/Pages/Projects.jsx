@@ -1,6 +1,6 @@
 import rightArr from "../assets/projectImages/shinyHunter.png";
 
-import "./Project.css";
+import "./Projects.css";
 
 function Projects(){
 
@@ -19,6 +19,21 @@ function Projects(){
         alt:"Image of the relay system of my shiny hunter", 
         value: "Shiny Hunter", 
         text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn "
+        }, 
+        { src: rightArr, 
+        alt:"Image of the relay system of my shiny hunter", 
+        value: "Shiny Hunter", 
+        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
+        },
+        {src: rightArr, 
+        alt:"Image of the relay system of my shiny hunter", 
+        value: "Shiny Hunter", 
+        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn "
+        }, 
+        { src: rightArr, 
+        alt:"Image of the relay system of my shiny hunter", 
+        value: "Shiny Hunter", 
+        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn "
         },
         { src: rightArr, 
         alt:"Image of the relay system of my shiny hunter", 
@@ -28,7 +43,7 @@ function Projects(){
     ];
 
     return(
-        <div className="content">
+        <div className="content" id="projects">
             <div className="project-listitems">
                 {options.map((option) => (
                     <div key={option.value} className="project-listitem-container">
