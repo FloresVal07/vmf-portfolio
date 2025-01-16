@@ -1,7 +1,10 @@
 import "./Contact.css";
 import TransitioningImage from "./TransitioningImage";
-import image1 from "../assets/carouselImages/contact.png";
-import image2 from "../assets/carouselImages/manlookingintosky.jpg";
+
+import gmail from "../assets/contactImages/gmail.png";
+import insta from "../assets/contactImages/insta.jpg";
+import linkedin from "../assets/contactImages/linkedIn.png";
+import slack from "../assets/contactImages/slack.png";
 
 function Contact(){
     
@@ -12,23 +15,23 @@ function Contact(){
                     <div className="content-box-row">
                         <div className="content-box" id="hidden-box"></div>
                         <div className="content-box">
-                            <TransitioningImage imageSrcA={image1} imageSrcB={image2} altTextA="a" altTextB="b"></TransitioningImage>
+                            <TransitioningImage imageSrcA={gmail} imageSrcB={slack} altTextA="a" altTextB="b" href="www.linkedin.com/in/valentin-flores-9233362a1"></TransitioningImage>
                         </div>
                         <div className="content-box" id="hidden-box"></div>
                     </div>
                     <div className="content-box-row">
                         <div className="content-box">
-                            <TransitioningImage imageSrcA={image2} imageSrcB={image1} altTextA="a" altTextB="b"></TransitioningImage>
+                            <TransitioningImage imageSrcA={insta} imageSrcB={gmail} altTextA="a" altTextB="b" href="www.linkedin.com/in/valentin-flores-9233362a1"></TransitioningImage>
                         </div>
                         <div className="content-box" id="hidden-box"></div>
                         <div className="content-box">
-                            <TransitioningImage imageSrcA={image1} imageSrcB={image2} altTextA="a" altTextB="b"></TransitioningImage>
+                            <TransitioningImage imageSrcA={linkedin} imageSrcB={insta} altTextA="a" altTextB="b" href="www.linkedin.com/in/valentin-flores-9233362a1"></TransitioningImage>
                         </div>
                     </div>
                     <div className="content-box-row">
                         <div className="content-box" id="hidden-box"></div>
                         <div className="content-box">
-                        <TransitioningImage imageSrcA={image2} imageSrcB={image1} altTextA="a" altTextB="b"></TransitioningImage>
+                        <TransitioningImage imageSrcA={slack} imageSrcB={linkedin} altTextA="a" altTextB="b" href="www.linkedin.com/in/valentin-flores-9233362a1"></TransitioningImage>
                         </div>
                         <div className="content-box" id="hidden-box"></div>
                     </div>
