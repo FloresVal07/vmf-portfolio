@@ -1,4 +1,3 @@
-
 .transitioning-image-container{
     width: 100%;
     height: 100%;
@@ -9,27 +8,10 @@
     position: relative;
     width: 100%;
     height: 100%;
-    transition: opacity 0.5s ease-in-out;
-    will-change: opacity;
+    transition: 0.5s ease-in-out;
     border-radius: 25px;
-    opacity: 1;
-  }
-  
-.transitioning-image-b {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    bottom: 103%;
-    transition: opacity 0.5s ease-in-out;
-    will-change: opacity;
-    border-radius: 25px;
-    opacity: 0;
 }
 
 .transitioning-image-a:hover {
-    opacity: 0;
-  }
-  
-.transitioning-image-b:hover {
-    opacity: 1;
+    transform: scale(1.3);
 }

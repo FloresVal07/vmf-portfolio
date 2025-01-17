@@ -15,23 +15,23 @@ function Contact(){
                     <div className="content-box-row">
                         <div className="content-box" id="hidden-box"></div>
                         <div className="content-box">
-                            <TransitioningImage imageSrcA={gmail} imageSrcB={figma} altTextA="a" altTextB="b" href=""></TransitioningImage>
+                            <TransitioningImage imageSrcA={gmail} altTextA="a" href=""></TransitioningImage>
                         </div>
                         <div className="content-box" id="hidden-box"></div>
                     </div>
                     <div className="content-box-row">
                         <div className="content-box">
-                            <TransitioningImage imageSrcA={insta} imageSrcB={gmail} altTextA="a" altTextB="b" href="www.instagram.com/v.flores.07/?utm_source=ig_embed&amp;utm_campaign=loading"></TransitioningImage>
+                            <TransitioningImage imageSrcA={insta} altTextA="a" href="www.instagram.com/v.flores.07/?utm_source=ig_embed&amp;utm_campaign=loading"></TransitioningImage>
                         </div>
                         <div className="content-box" id="hidden-box"></div>
                         <div className="content-box">
-                            <TransitioningImage imageSrcA={linkedin} imageSrcB={insta} altTextA="a" altTextB="b" href="www.linkedin.com/in/valentin-flores-9233362a1"></TransitioningImage>
+                            <TransitioningImage imageSrcA={linkedin} altTextA="a" href="www.linkedin.com/in/valentin-flores-9233362a1"></TransitioningImage>
                         </div>
                     </div>
                     <div className="content-box-row">
                         <div className="content-box" id="hidden-box"></div>
                         <div className="content-box">
-                        <TransitioningImage imageSrcA={figma} imageSrcB={linkedin} altTextA="a" altTextB="b" href="www.figma.com/@valentinflores"></TransitioningImage>
+                        <TransitioningImage imageSrcA={figma} altTextA="a" href="www.figma.com/@valentinflores"></TransitioningImage>
                         </div>
                         <div className="content-box" id="hidden-box"></div>
                     </div>
