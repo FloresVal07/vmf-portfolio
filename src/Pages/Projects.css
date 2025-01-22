@@ -7,14 +7,6 @@
     align-items: center;
 }
 
-.project-listitem-image{
-    width: 20vw;
-    height: 20vw;
-    border-bottom: 4px solid #59472B;
-    min-height: 150px;
-    min-width: 150px;
-}
-
 .project-listitem-text-container{
     background-color: #FFE96C;
     border-left: 4px solid #59472B;

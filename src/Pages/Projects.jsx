@@ -1,6 +1,13 @@
-import rightArr from "../assets/projectImages/shinyHunter.png";
-
+import rightArr from "../assets/projectImages/shinyHunter/shinyHunter.png";
+import shinyHunter from "../assets/projectImages/shinyHunter/shinyHunter.png";
+import controllers from "../assets/projectImages/shinyHunter/controllers.jpg";
+import firstEver from "../assets/projectImages/shinyHunter/firstEver.jpg";
+import success from "../assets/projectImages/shinyHunter/success.jpg";
+import working from "../assets/projectImages/shinyHunter/working.mp4";
+import container from "../assets/projectImages/shinyHunter/unnamed.jpg";
+import hobby from "../assets/projectImages/shinyHunter/hobby.jpg";
 import "./Projects.css";
+import ImageSlider from "./ImageSlider.jsx";
 
 function Projects(){
 
@@ -112,12 +119,25 @@ function Projects(){
         }
     ];
 
+    const slides = [
+        <img src={shinyHunter} alt="Shiny Hunter" />,
+        <img src={hobby} alt="Hobby" />,
+        <img src={controllers} alt="Controllers" />,
+        <img src={firstEver} alt="First Ever" />,
+        <img src={success} alt="Success" />,
+        <img src={container} alt="Container" />,
+        <video controls>
+          <source src={working} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>,
+      ];
+
     return(
         <div className="content" id="projects">
             <div className="project-listitems">
                 {options.map((option) => (
                     <div key={option.value} className="project-listitem-container">
-                        <img src={option.src} className="project-listitem-image" alt={option.alt}/>
+                        <ImageSlider slides={slides}></ImageSlider>
                         <div className="project-listitem-text-container">
                             <h1 className="project-listitem-text">{option.text1}</h1>
                             <br/>
