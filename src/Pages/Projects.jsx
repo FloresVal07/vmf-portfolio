@@ -1,6 +1,7 @@
 import "./Projects.css";
 import ImageSlider from "./ImageSlider.jsx";
-import rightArr from "../assets/projectImages/shinyHunter/shinyHunter.png";
+
+//Shiny Hunter Assets
 import firstEver from "../assets/projectImages/shinyHunter/firstEver.jpg";
 import hobby from "../assets/projectImages/shinyHunter/hobby.jpg";
 import controllers from "../assets/projectImages/shinyHunter/controllers.jpg";
@@ -8,13 +9,47 @@ import shinyHunter from "../assets/projectImages/shinyHunter/shinyHunter.png";
 import container from "../assets/projectImages/shinyHunter/unnamed.jpg";
 import success from "../assets/projectImages/shinyHunter/success.jpg";
 import working from "../assets/projectImages/shinyHunter/working.mp4";
-import code from "../assets/projectImages/shinyHunter/code.mp4";
+
+
+//Gwent Card Game Assets
+import card from "../assets/projectImages/gwentCardGame/card.png";
+import deck from "../assets/projectImages/gwentCardGame/deck.png";
+import scenebuilder from "../assets/projectImages/gwentCardGame/scenebuilder.png";
+import choose from "../assets/projectImages/gwentCardGame/choose.png";
+import board from "../assets/projectImages/gwentCardGame/board.png";
+import game from "../assets/projectImages/gwentCardGame/game.png";
+import gwentvideo from "../assets/projectImages/gwentCardGame/gwentVideo.mp4";
 
 function Projects(){
 
+    const shinyHunterAssets = [
+        <img src={firstEver} alt="First Ever" />,
+        <img src={hobby} alt="Hobby" />,
+        <img src={controllers} alt="Controllers" />,
+        <img src={shinyHunter} alt="Shiny Hunter" />,
+        <img src={container} alt="Container" />,
+        <img src={success} alt="Success" />,
+        <video controls>
+          <source src={working} type="video/mp4" alt="video of the shiny hunter working"/>
+          Your browser does not support the video tag.
+        </video>,
+      ];
+
+    const gwentAssets = [
+        <img src={card} alt="First Ever" />,
+        <img src={deck} alt="Hobby" />,
+        <img src={scenebuilder} alt="Controllers" />,
+        <img src={choose} alt="Shiny Hunter" />,
+        <img src={board} alt="Container" />,
+        <img src={game} alt="Success" />,
+        <video controls>
+          <source src={gwentvideo} type="video/mp4" alt="video of the shiny hunter working"/>
+          Your browser does not support the video tag.
+        </video>,
+      ];
+
     const options = [
-        { src: rightArr, 
-        alt:"Image of the relay system of my shiny hunter", 
+        { slides: shinyHunterAssets, 
         value: "Shiny Hunter", 
         text1:"During my sophomore year of high school, I had become HOOKED on shiny hunting. In layman's terms, shiny hunting was a chance-based encounter for a sought-after special type of Pokemon. It’s similar to fishing or gambling, the wait and anticipation brew over until you FINALLY get a big win.",
         text2:"The Issue with this is it’s very time-consuming. I would spend hours a day encountering around 500 Pokemon a day with the odds being around 1/4096. Therefore, me being me I decided to find a way to keep myself productive while still enjoying what I love.",
@@ -28,23 +63,21 @@ function Projects(){
         text10:"The final step in the process was to put it all together and put it to the test. Given that it could run an entire iteration in around 40 seconds, I estimated that I’d have to wait about 45 hours because it can make about 90 encounters an hour. So for the next two days, I left for school and just enjoyed life while my shiny hunter went off with no breaks. And on the 60th hour, I finally came back to it’s first success! And like that, I finished my 2 months long endeavor to finally leave this hobby behind.",
         text11:"After having gone through this experience, I believe I grew as an engineer. I learned that solutions should be made according to a problem not according to what you already know. In doing this, you grow your knowledge and your problem-solving skills. But more importantly, you gain confidence in the realm of abstraction. A realm where we can find new solutions or make new tools to better the world."
         }, 
-        { src: rightArr, 
-        alt:"Image of the relay system of my shiny hunter", 
-        value: "Shiny Hunter", 
-        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
-        text2:"",
-        text3:"",
-        text4:"",
-        text5:"",
-        text6:"",
-        text7:"",
-        text8:"",
-        text9:"The issue was in real life, the switch’s screen has reflection, color distortion with the webcam, and brightness difference. And to solve this I 3d printed an enclosure so that it could be completely covered as well as I limited the webcam’s crop ratio so that it’s less likely to fail. With this, I had to resize and retrain my data. But in the end, it finally WORKED!",
+        { slides: gwentAssets, 
+        value: "Gwent Card Game", 
+        text1:"During the first couple months of university I was struggling in my CSE205 class. The issue was that I had learnt java all the way back in junior high. Although I did have experience with the fundamentals of java I had no real clue how to create anything of value with it. So instead of trudging through and struggling with the minute details I decided to work on something I’d be proud of.",
+        text2:"After thorough consideration, I settled on making a card game with a GUI and completely custom backend. This was because in this way I could practice concepts like Polymorphism and Data Structures through displaying cards, storing cards in efficient structures, and data manipulation using GUI input.",
+        text3:"Before I explain the process I have to dive into the game itself. Essentially, the game is a best out of 3 rounds where players take turns placing cards onto 3 different rows. At the end of each round the rows are tallied up and whoever has the most amount of winning rows wins. However, cards have special effects that can reduce, enhance, destroy, etc… as well as leaders that have further abilities that can impact the game.",
+        text4:"Now then, I started off by creating the cards themselves. As stated previously, I wanted to practice concepts integral to object oriented programming. Therefore, I created the general card class with special card types in mind which was redundant for some cards but essential for others. I then practiced manipulating the cards using the console as input to make sure everything was in order. Finally, there needs to be a class for the player because data such as deck type, name, and cards in hand need to be stored.",
+        text5:"With the base done I was able to move on into the GUI part. To do this I decided on JavaFX because I had heard of a framework that was simple to learn, powerful, and easy to interact with using Java, SceneBuilder. Using scene builder I created the start up pages that asked for information such as a player name, deck type, and leader card. From there I would style using CSS and just general spacing.",
+        text6:"The hardest part during this I’d say was working around the fact that scenebuilder object’s had to be predefined. This meant, I’d have to have a set amount of card displaying objects no matter what, which was a simple yet inefficient work around. Another small problem was transitioning because all the logic was performed on the same class as the class that managed each individual scene in scene builder.",
+        text7:"Although each individual scene was quite simple, the page where cards were chosen was the most difficult. This was because each array HAD to be 20 cards but there was a restricted amount of each cards. Even so, using event clickers and simple writing/rewriting of selected cards interacted with in scenebuilder I managed to safely manage a chosen amount of cards in the card selection page.",
+        text8:"Finally, the actual game itself. The game logic was held on the board. And to effectively render cards on each row there had to be array lists of both cards on each row and card gui representations. Using this, rows could be tallied up against each other and displayed in the correct order using information from the card lists of each row. This was relatively easy to implement and the effects were too, bar some minor planning beforehand.",
+        text9:"And like that the Gwent Card Game was finished in pretty good time, it ran from August 17th to around October 1st. During this, I learned how to use JavaFX with SceneBuilder, was up to date with my Java knowledge, and learned file navigation in terms of dependencies, absolute, and relative pathing.",
         text10:"",
         text11:""
         },
-        { src: rightArr, 
-        alt:"Image of the relay system of my shiny hunter", 
+        { slides: shinyHunterAssets, 
         value: "Shiny Hunter", 
         text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
         text2:"",
@@ -54,12 +87,11 @@ function Projects(){
         text6:"",
         text7:"",
         text8:"",
-        text9:"The issue was in real life, the switch’s screen has reflection, color distortion with the webcam, and brightness difference. And to solve this I 3d printed an enclosure so that it could be completely covered as well as I limited the webcam’s crop ratio so that it’s less likely to fail. With this, I had to resize and retrain my data. But in the end, it finally WORKED!",
+        text9:"",
         text10:"",
         text11:""
         }, 
-        { src: rightArr, 
-        alt:"Image of the relay system of my shiny hunter", 
+        { slides: shinyHunterAssets, 
         value: "Shiny Hunter", 
         text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
         text2:"",
@@ -69,12 +101,11 @@ function Projects(){
         text6:"",
         text7:"",
         text8:"",
-        text9:"The issue was in real life, the switch’s screen has reflection, color distortion with the webcam, and brightness difference. And to solve this I 3d printed an enclosure so that it could be completely covered as well as I limited the webcam’s crop ratio so that it’s less likely to fail. With this, I had to resize and retrain my data. But in the end, it finally WORKED!",
+        text9:"",
         text10:"",
         text11:""
         },
-        {src: rightArr, 
-        alt:"Image of the relay system of my shiny hunter", 
+        {slides: shinyHunterAssets, 
         value: "Shiny Hunter", 
         text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
         text2:"",
@@ -84,12 +115,11 @@ function Projects(){
         text6:"",
         text7:"",
         text8:"",
-        text9:"The issue was in real life, the switch’s screen has reflection, color distortion with the webcam, and brightness difference. And to solve this I 3d printed an enclosure so that it could be completely covered as well as I limited the webcam’s crop ratio so that it’s less likely to fail. With this, I had to resize and retrain my data. But in the end, it finally WORKED!",
+        text9:"",
         text10:"",
         text11:""
         }, 
-        { src: rightArr, 
-        alt:"Image of the relay system of my shiny hunter", 
+        { slides: shinyHunterAssets, 
         value: "Shiny Hunter", 
         text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
         text2:"",
@@ -99,12 +129,11 @@ function Projects(){
         text6:"",
         text7:"",
         text8:"",
-        text9:"The issue was in real life, the switch’s screen has reflection, color distortion with the webcam, and brightness difference. And to solve this I 3d printed an enclosure so that it could be completely covered as well as I limited the webcam’s crop ratio so that it’s less likely to fail. With this, I had to resize and retrain my data. But in the end, it finally WORKED!",
+        text9:"",
         text10:"",
         text11:""
         },
-        { src: rightArr, 
-        alt:"Image of the relay system of my shiny hunter", 
+        { slides: shinyHunterAssets, 
         value: "Shiny Hunter", 
         text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
         text2:"",
@@ -114,36 +143,20 @@ function Projects(){
         text6:"",
         text7:"",
         text8:"",
-        text9:"The issue was in real life, the switch’s screen has reflection, color distortion with the webcam, and brightness difference. So to solve this I 3d printed an enclosure so that it could be completely covered as well as I limited the webcam’s crop ratio so that it’s less likely to fail. With this, I had to resize and retrain my data. But in the end, it finally WORKED!",
+        text9:"",
         text10:"",
         text11:""
         }
     ];
-
-    const slides = [
-        <img src={firstEver} alt="First Ever" />,
-        <img src={hobby} alt="Hobby" />,
-        <img src={controllers} alt="Controllers" />,
-        <img src={shinyHunter} alt="Shiny Hunter" />,
-        <img src={container} alt="Container" />,
-        <img src={success} alt="Success" />,
-        <video controls>
-          <source src={working} type="video/mp4" alt="video of the shiny hunter working"/>
-          Your browser does not support the video tag.
-        </video>,
-        <video controls>
-        <source src={code} type="video/mp4" alt="video of the code"/>
-        Your browser does not support the video tag.
-      </video>,
-      ];
 
     return(
         <div className="content" id="projects">
             <div className="project-listitems">
                 {options.map((option) => (
                     <div key={option.value} className="project-listitem-container">
-                        <ImageSlider slides={slides}></ImageSlider>
+                        <ImageSlider slides={option.slides}></ImageSlider>
                         <div className="project-listitem-text-container">
+                            <h1 className="project-listitem-title">{option.value}</h1>
                             <h1 className="project-listitem-text">{option.text1}</h1>
                             <br/>
                             <h1 className="project-listitem-text">{option.text2}</h1>
