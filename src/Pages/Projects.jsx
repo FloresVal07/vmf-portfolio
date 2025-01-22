@@ -1,13 +1,14 @@
-import rightArr from "../assets/projectImages/shinyHunter/shinyHunter.png";
-import shinyHunter from "../assets/projectImages/shinyHunter/shinyHunter.png";
-import controllers from "../assets/projectImages/shinyHunter/controllers.jpg";
-import firstEver from "../assets/projectImages/shinyHunter/firstEver.jpg";
-import success from "../assets/projectImages/shinyHunter/success.jpg";
-import working from "../assets/projectImages/shinyHunter/working.mp4";
-import container from "../assets/projectImages/shinyHunter/unnamed.jpg";
-import hobby from "../assets/projectImages/shinyHunter/hobby.jpg";
 import "./Projects.css";
 import ImageSlider from "./ImageSlider.jsx";
+import rightArr from "../assets/projectImages/shinyHunter/shinyHunter.png";
+import firstEver from "../assets/projectImages/shinyHunter/firstEver.jpg";
+import hobby from "../assets/projectImages/shinyHunter/hobby.jpg";
+import controllers from "../assets/projectImages/shinyHunter/controllers.jpg";
+import shinyHunter from "../assets/projectImages/shinyHunter/shinyHunter.png";
+import container from "../assets/projectImages/shinyHunter/unnamed.jpg";
+import success from "../assets/projectImages/shinyHunter/success.jpg";
+import working from "../assets/projectImages/shinyHunter/working.mp4";
+import code from "../assets/projectImages/shinyHunter/code.mp4";
 
 function Projects(){
 
@@ -120,16 +121,20 @@ function Projects(){
     ];
 
     const slides = [
-        <img src={shinyHunter} alt="Shiny Hunter" />,
+        <img src={firstEver} alt="First Ever" />,
         <img src={hobby} alt="Hobby" />,
         <img src={controllers} alt="Controllers" />,
-        <img src={firstEver} alt="First Ever" />,
-        <img src={success} alt="Success" />,
+        <img src={shinyHunter} alt="Shiny Hunter" />,
         <img src={container} alt="Container" />,
+        <img src={success} alt="Success" />,
         <video controls>
-          <source src={working} type="video/mp4" />
+          <source src={working} type="video/mp4" alt="video of the shiny hunter working"/>
           Your browser does not support the video tag.
         </video>,
+        <video controls>
+        <source src={code} type="video/mp4" alt="video of the code"/>
+        Your browser does not support the video tag.
+      </video>,
       ];
 
     return(
