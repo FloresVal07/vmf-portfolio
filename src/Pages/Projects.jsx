@@ -84,6 +84,21 @@ function Projects(){
         text11:""
         },
         { slides: constructionAssets, 
+            value: "Chepes Grua Website", 
+            text1:"For the entire time I’ve been a developer or learning syntaxes to develop I’ve always heard terms such as front-end, back-end, React, Node, APIs, SQL, and things of the like being thrown around. Although I knew each related to web development or web apps I never quite understood exactly what they were. What’s more, my dad had just started his own tow trucking company and since I’m more of a scholar than handyman I decided to help in my way, by making him a website.",
+            text2:"Accordingly, around the time I finished my Gwent Card Game, I decided to finally consecrate some answers to these notions. And me being me, what better way to learn than to build!",
+            text3:"However, as a rule of thumb, I do design before any building. Funnily enough around the time that these ideas were running through my mind, we were assigned a project to research and write a paper on as well as a simple webpage on Google Sites on any topic we’d like. Therefore, with explicit and achievable goals I set sail. I learned everything from old technologies such as Apache server hosting to new ones such as the annoying reasons we have to use Javascript in our day-to-day.",
+            text4:"With this newly acquired knowledge, I settled on learning a framework that would be simple to learn and relatively powerful. My choice, of course, was the React Js framework using the Vite build tool (because the 4-hour-long YouTube tutorial said so). This was because I specialize in backend development so my mind instantly goes towards concepts such as functions or classes. What’s cool about React is that it’s very modular meaning pages are comprised of several smaller pages made in React. A home page could be a header page, content page, and footer page instead for example. This helps my brain MASSIVELY because, if you’ve read the other projects, I always try to break bigger problems into smaller more manageable ones. ",
+            text5:"Now that I had some familiarity with the tools and their capabilities I had to learn even more (I know, it’s exhausting, but I LOVE this journey type of life). What I mean by this is that front-end developers usually design before coding their web pages. They use tools such as Figma, Photoshop, etc to make appealing, polished, and professional websites. The tool I decided to learn was Figma, mostly because the icon looked cool to me. I’m joking, I chose this one because it’s an industry standard that works similarly to GitHub in that I could take inspiration or guidance from the community.",
+            text6:"With all the learning done and the new tools learned, I began designing. I created the basic template in figma which was maybe the most tedious thing. I felt as though I were a NASCAR driver in traffic. Even so, I eventually finished and with all the practice I had done in React on smaller webpages I had become familiar enough to actualize my ideas.",
+            text7:"And since I wanted to do something fast and cheap I decided to use CloudFlare’s free website hosting service because having it displayed on search engines made the site feel just that extra amount of special.",
+            text8:"",
+            text9:"Google Site Link: https://sites.google.com/view/web-development-simplified/home (For those who are curious)",
+            text10:"",
+            text11:""
+        },
+        //TO DO: ADD THE IMAGES TO GO WITH CHEPES WEBSITE
+        { slides: constructionAssets, 
         value: "To Be Determined", 
         text1:"",
         text2:"",
