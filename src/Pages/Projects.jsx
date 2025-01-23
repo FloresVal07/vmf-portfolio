@@ -19,6 +19,8 @@ import choose from "../assets/projectImages/gwentCardGame/choose.png";
 import board from "../assets/projectImages/gwentCardGame/board.png";
 import game from "../assets/projectImages/gwentCardGame/game.png";
 import gwentvideo from "../assets/projectImages/gwentCardGame/gwentVideo.mp4";
+import construction from "../assets/constructionImage.png";
+
 
 function Projects(){
 
@@ -47,6 +49,10 @@ function Projects(){
           Your browser does not support the video tag.
         </video>,
       ];
+
+    const constructionAssets = [
+        <img src = {construction} alt = "Construction Image"/>
+    ];
 
     const options = [
         { slides: shinyHunterAssets, 
@@ -77,68 +83,12 @@ function Projects(){
         text10:"",
         text11:""
         },
-        { slides: shinyHunterAssets, 
-        value: "Shiny Hunter", 
-        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
+        { slides: constructionAssets, 
+        value: "To Be Determined", 
+        text1:"",
         text2:"",
         text3:"",
-        text4:"",
-        text5:"",
-        text6:"",
-        text7:"",
-        text8:"",
-        text9:"",
-        text10:"",
-        text11:""
-        }, 
-        { slides: shinyHunterAssets, 
-        value: "Shiny Hunter", 
-        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
-        text2:"",
-        text3:"",
-        text4:"",
-        text5:"",
-        text6:"",
-        text7:"",
-        text8:"",
-        text9:"",
-        text10:"",
-        text11:""
-        },
-        {slides: shinyHunterAssets, 
-        value: "Shiny Hunter", 
-        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
-        text2:"",
-        text3:"",
-        text4:"",
-        text5:"",
-        text6:"",
-        text7:"",
-        text8:"",
-        text9:"",
-        text10:"",
-        text11:""
-        }, 
-        { slides: shinyHunterAssets, 
-        value: "Shiny Hunter", 
-        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
-        text2:"",
-        text3:"",
-        text4:"",
-        text5:"",
-        text6:"",
-        text7:"",
-        text8:"",
-        text9:"",
-        text10:"",
-        text11:""
-        },
-        { slides: shinyHunterAssets, 
-        value: "Shiny Hunter", 
-        text1:"Awjkdawda a kdnawjdajdb ajdbawdk kjawndj jsdn hsdabwd sdhbcndksn ",
-        text2:"",
-        text3:"",
-        text4:"",
+        text4:"I'm still YOUNG I have much to do and look forward to becoming more involved and creative in my Software Engineering journey",
         text5:"",
         text6:"",
         text7:"",
