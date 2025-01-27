@@ -21,6 +21,14 @@ import game from "../assets/projectImages/gwentCardGame/game.png";
 import gwentvideo from "../assets/projectImages/gwentCardGame/gwentVideo.mp4";
 import construction from "../assets/constructionImage.png";
 
+//chepes grua assets
+import englishProject from "../assets/projectImages/chepesGrua/englishProject.png";
+import webResearch from "../assets/projectImages/chepesGrua/webResearch.png";
+import figmaDesign from "../assets/projectImages/chepesGrua/figmaDesign.png";
+import jsxFiles from "../assets/projectImages/chepesGrua/jsxFiles.png";
+import viteCmds from "../assets/projectImages/chepesGrua/viteCmds.png";
+import websitePic from "../assets/projectImages/chepesGrua/websitePic.png";
+import analytics from "../assets/projectImages/chepesGrua/analytics.png";
 
 function Projects(){
 
@@ -48,8 +56,17 @@ function Projects(){
           <source src={gwentvideo} type="video/mp4" alt="video of the shiny hunter working"/>
           Your browser does not support the video tag.
         </video>,
-      ];
+    ];
 
+    const chepesAssets = [
+        <img src={englishProject} alt="English Project" />,
+        <img src={webResearch} alt="English Website Research" />,
+        <img src={figmaDesign} alt="Figma Design" />,
+        <img src={jsxFiles} alt="Some JSX Files Of The Chepes React Project" />,
+        <img src={viteCmds} alt="The build command for the website" />,
+        <img src={websitePic} alt="The Website Itself" />,
+        <img src={analytics} alt="The Website analytics after it has matured" />
+    ]
     const constructionAssets = [
         <img src = {construction} alt = "Construction Image"/>
     ];
@@ -83,7 +100,7 @@ function Projects(){
         text10:"",
         text11:""
         },
-        { slides: constructionAssets, 
+        { slides: chepesAssets, 
             value: "Chepes Grua Website", 
             text1:"For the entire time I’ve been a developer or learning syntaxes to develop I’ve always heard terms such as front-end, back-end, React, Node, APIs, SQL, and things of the like being thrown around. Although I knew each related to web development or web apps I never quite understood exactly what they were. What’s more, my dad had just started his own tow trucking company and since I’m more of a scholar than handyman I decided to help in my way, by making him a website.",
             text2:"Accordingly, around the time I finished my Gwent Card Game, I decided to finally consecrate some answers to these notions. And me being me, what better way to learn than to build!",
@@ -98,6 +115,7 @@ function Projects(){
             text11:""
         },
         //TO DO: ADD THE IMAGES TO GO WITH CHEPES WEBSITE
+        //TO DO: Fix visual bug with navbar on iphones (update z index)
         { slides: constructionAssets, 
         value: "To Be Determined", 
         text1:"",
