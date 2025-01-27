@@ -89,6 +89,7 @@
         border: 4px solid #59472B;
         width: calc(100% - 8px);
         padding: 10px;
+        z-index: 100000;
     }
 
     .navbar-checkbox:checked ~ .navbar-options {
